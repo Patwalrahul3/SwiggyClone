@@ -1,3 +1,41 @@
 npm i -g typescript ts-node
 
 npm i typescript ts-node express node @types/express @types/node nodemon @types/nodemon
+
+npm i mongoose @types/mongoose
+
+
+
+promise 
+--------
+function is_MathByX_Available(){
+    return  true;
+}
+
+function is_MathByY_Available(){
+    return  false;
+}
+
+function result(): Promise<string>{
+    return new Promise((resolve, reject) =>{
+        if(is_MathByX_Available()){
+            resolve('Math by X available');
+        } else if(is_MathByY_Available()){
+            resolve('Math by Y available');
+        } else {
+            reject('Both books are available');
+        }
+    })
+}
+
+result().then((result) => {
+    console.log(result);
+}).catch((err)=>{
+   console.log(err);
+});
+
+
+const obj1 = {name: 'Rahul', age :  25};
+const obj2 = {...obj1, name:'Manish'};
+
+console.log(obj2)
