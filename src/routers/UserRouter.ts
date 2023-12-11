@@ -15,9 +15,11 @@ class UserRouter {
   }
 
   getRoutes() {
+   
+  }
+  postRoutes() {
     this.router.post('/signup', UserValidators.signup(), UserController.signup)
   }
-  postRoutes() {}
   patchRoutes() {}
   putRoutes() {}
   deleteRoutes() {}
