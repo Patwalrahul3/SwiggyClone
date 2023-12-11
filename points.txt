@@ -4,6 +4,9 @@ npm i typescript ts-node express node @types/express @types/node nodemon @types/
 
 npm i mongoose @types/mongoose
 
+npm i body-parser @types/body-parser
+
+npm i express-validator
 
 
 promise 
